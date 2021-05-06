@@ -32,14 +32,73 @@
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
-    L.marker([55.415783, -1.706078]).addTo(mymap).bindPopup("<b>HP 1 </b>. Castillo Anlwick, Northumberland, Inglaterra, UK");
-    L.marker([56.866667, -5.45]).addTo(mymap).bindPopup("<b>HP 2 </b>. Glenfinnan, Highlands, Escocia, UK.");
-    L.marker([56.679167, -5.106389]).addTo(mymap).bindPopup("<b>HP 3 </b>. Glencoe, Escocia, UK.");
-    L.marker([50.76, 0.16]).addTo(mymap).bindPopup("<b>HP 4 </b>. Seven Sisters, Inglaterra, UK");
-    L.marker([51.562629, -0.63018]).addTo(mymap).bindPopup("<b>HP 5 </b>. Burnham Beeches, Inglaterra, UK");
-    L.marker([51.41475, -2.11718]).addTo(mymap).bindPopup("<b>HP 1 y 6 </b>. Abadía de Lacock, Wiltshire, Inglaterra, UK");
-    L.marker([51.66, -5.06]).addTo(mymap).bindPopup("<b>HP 7 parte 1 y 2 </b>. Freshwater West, Pembrokeshire, Gales, UK");
-    L.marker([51.693333, -0.419722]).addTo(mymap).bindPopup("<b>HP 7 parte dos </b>.Estudios Leavesden Film, Watford, Inglaterra, UK");
+    
+      var firstIcon = L.icon({
+          iconUrl: '/images/pin1.PNG',
+          iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+         popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+        var secondIcon = L.icon({
+         iconUrl: '/images/pin2.png',
+          iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+         popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+        var thirdIcon = L.icon({
+         iconUrl: '/images/pin3.png',
+          iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+         var fourthIcon = L.icon({
+         iconUrl: '/images/pin4.png',
+         iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor   
+ });
+        var fifthIcon = L.icon({
+         iconUrl: '/images/pin5.png',
+         iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor   
+ });
+        var sixthIcon = L.icon({
+          iconUrl: '/images/pin6.png',
+         iconSize:     [50,50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+         popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+        var seventhIcon = L.icon({
+          iconUrl: '/images/pin7.png',
+         iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+        var eighthIcon = L.icon({
+           iconUrl: '/images/pin8.png',
+          iconSize:     [50, 50], // size of the icon
+         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+    
+        L.marker([55.415783, -1.706078], {icon: firstIcon}).addTo(mymap).bindPopup("<b>HP 1 </b>. Castillo Anlwick, Northumberland, Inglaterra, UK");
+        L.marker([56.866667, -5.45], {icon: secondIcon}).addTo(mymap).bindPopup("<b>HP 2 </b>. Glenfinnan, Highlands, Escocia, UK.");
+        L.marker([56.679167, -5.106389], {icon: thirdIcon}).addTo(mymap).bindPopup("<b>HP 3 </b>. Glencoe, Escocia, UK.");
+        L.marker([50.76, 0.16], {icon: fourthIcon}).addTo(mymap).bindPopup("<b>HP 4 </b>. Seven Sisters, Inglaterra, UK");
+        L.marker([51.562629, -0.63018], {icon: fifthIcon}).addTo(mymap).bindPopup("<b>HP 5 </b>. Burnham Beeches, Inglaterra, UK");
+        L.marker([51.41475, -2.11718], {icon: sixthIcon}).addTo(mymap).bindPopup("<b>HP 1 y 6 </b>. Abadía de Lacock, Wiltshire, Inglaterra, UK");
+        L.marker([51.66, -5.06], {icon: seventhIcon}).addTo(mymap).bindPopup("<b>HP 7 parte 1 y 2 </b>. Freshwater West, Pembrokeshire, Gales, UK");
+        L.marker([51.693333, -0.419722], {icon: eighthIcon}).addTo(mymap).bindPopup("<b>HP 7 parte dos </b>.Estudios Leavesden Film, Watford, Inglaterra, UK");
+   //.addTo(mymap);
+   // L.marker([55.415783, -1.706078]).addTo(mymap).bindPopup("<b>HP 1 </b>. Castillo Anlwick, Northumberland, Inglaterra, UK");
+    //L.marker([56.866667, -5.45]).addTo(mymap).bindPopup("<b>HP 2 </b>. Glenfinnan, Highlands, Escocia, UK.");
+    //L.marker([56.679167, -5.106389]).addTo(mymap).bindPopup("<b>HP 3 </b>. Glencoe, Escocia, UK.");
+    //L.marker([50.76, 0.16]).addTo(mymap).bindPopup("<b>HP 4 </b>. Seven Sisters, Inglaterra, UK");
+    //L.marker([51.562629, -0.63018]).addTo(mymap).bindPopup("<b>HP 5 </b>. Burnham Beeches, Inglaterra, UK");
+    //L.marker([51.41475, -2.11718]).addTo(mymap).bindPopup("<b>HP 1 y 6 </b>. Abadía de Lacock, Wiltshire, Inglaterra, UK");
+    //L.marker([51.66, -5.06]).addTo(mymap).bindPopup("<b>HP 7 parte 1 y 2 </b>. Freshwater West, Pembrokeshire, Gales, UK");
+    //L.marker([51.693333, -0.419722]).addTo(mymap).bindPopup("<b>HP 7 parte dos </b>.Estudios Leavesden Film, Watford, Inglaterra, UK");
 </script>
     </body>
 </html>

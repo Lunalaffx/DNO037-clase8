@@ -28,12 +28,21 @@ var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['La primera', 'La segunda', 'La tercera', 'La cuarta', 'La quinta', 'La sexta', 'La séptima', 'La octava'],
+
         datasets: [{
-            label: 'Ganancias por película en miles de dólares',
+            label: 'Ganancias por película en millones USD',
             data: [1007, 879, 796, 896, 942, 934, 977, 1394],
             backgroundColor: 'rgba(250, 100, 100, 0.5)',
             borderWidth: 0
+            
+         }, {
+            label: 'Presupuesto en millones USD',
+            data: [125, 100, 130, 150, 150, 250, 250, 250],
+            backgroundColor: 'rgba(0, 0, 250, 0.5)', 
+            borderWidth: 0
+            
         }]
+            
     },
     options: {
         scales: {
